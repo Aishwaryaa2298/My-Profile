@@ -11,10 +11,10 @@
 
 html,
 body {
-    background:white;
+    background:#ffffff;
     height:100vh;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family:sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -138,18 +138,17 @@ a:visited {
 
 a:hover,
 a:active {
-    color: #555;
-    border-bottom: 1px solid transparent;
+    color: #e67e22;
+    border-bottom: 1px solid  #e67e22;
 }
-
 
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.65)),url(img/home2.jpg) ;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.7)),url(img/home2.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.67)),url(img/home2.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.44), rgba(0, 0, 0, 0.67)),url(img/home2.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -181,6 +180,7 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
+    font-family: sans-serif;
     padding: 8px 0;
     color: #fff;
     text-decoration: none;
@@ -194,6 +194,7 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+    
 }
 
 
@@ -270,17 +271,18 @@ header {
 /* ----------------------------------------------- */
 
 .section-plans {
-    background-color:rgba(128, 128, 128, 0.22);
-  
-    
+    background-color: #f4f4f4; 
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
 }
 
 .plan-box {
-    background-color: #fff;
+    background-color: white;
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
 }
 
 .plan-box div {
@@ -289,7 +291,7 @@ header {
 }
 
 .plan-box div:first-child {
-    background-color: #fcfcfc;
+    background-color:white;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -343,23 +345,18 @@ footer {
 /* Animations */
 /* ----------------------------------------------- */
 
-.js--wp-1,
 .js--wp-2,
-.js--wp-3
+
 {
     opacity: 0;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
 
-.js--wp-4 {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-}
 
-.js--wp-1.animated,
+
 .js--wp-2.animated,
-.js--wp-3.animated {
+ {
     opacity: 1;
 }
 
@@ -460,25 +457,85 @@ footer {
 .container {
   padding: 2px 16px;
       border-radius: 5px;
+    font-family: sans-serif;
 }
 
 .section-project {
-    background-color: rgba(128, 128, 128, 0.31);
+ 
+  background-image:linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.74)), url(img/project1.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
 
 }
 
 .section-accomplishment {
- background-color: rgba(128, 128, 128, 0.46);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.74)),url(img/home5.jpeg);
     background-size: cover;
-    color: rgba(0, 0, 0, 0.8);
+    color: #fff;
     background-attachment: fixed;
 }
-
-
-
 
 .width-100 {
     max-width: 100%;
 }
 
+.section-activities {
+    
+    background-size: cover;
+    color: rgba(0, 0, 0, 0.33);
+    background-attachment: fixed;
+   
+}
+
+
+.d-flex {
+  display:flex;
+  justify-contents:center;
+  vertical-align:middle;
+}
+.skill-img {
+  float:left;
+  width:88px;
+}
+.progress {
+  margin:0px auto;
+  padding:0;
+  width:69%;
+  height:20px;
+  overflow:hidden;
+  align-self: center;
+  background:#e5e5e5;
+  border-radius:6px;
+    text-align: center;
+}
+.bar {
+	position:relative;
+  float:left;
+  min-width:1%;
+  height:100%;
+  background:rgba(0, 203, 195, 0.96);
+}
+.percent {
+	position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  font-family:sans-serif;
+  font-size:12px;
+  color:white;
+}
+
+.section-skills {
+  background-image: linear-gradient(115deg, rgba(23, 71, 140, 0.38) 0%, rgba(85, 85, 85, 0.53) 61%, rgba(42, 195, 156, 0.6) 150%),url(img/skills.jpg);
+
+    background-size: cover; 
+}
+
+
+.w3-large {
+    font-family: sans-serif;
+    color:deeppink;
+}
 
